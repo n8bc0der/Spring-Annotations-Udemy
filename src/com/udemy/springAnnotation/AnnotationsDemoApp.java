@@ -26,6 +26,8 @@ public class AnnotationsDemoApp {
 		
 		System.out.println(theCoach.getDailyFortune());
 		
+		System.out.println(theCoach.getFileFortune());
+		
 //		Closing the container
 		context.close();
 

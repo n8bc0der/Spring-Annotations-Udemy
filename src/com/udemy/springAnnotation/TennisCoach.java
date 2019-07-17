@@ -14,6 +14,9 @@ public class TennisCoach implements Coach {
 	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 	
+	@Autowired
+	private FileFortuneService fileFortuneService;
+	
 //******************Using Constructor Method for Autowiring******************//
 	
 //	@Autowired
@@ -61,6 +64,13 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
+	}
+
+
+	@Override
+	public String getFileFortune() {
+		// TODO Auto-generated method stub
+		return fileFortuneService.getFileFortune();
 	}
 
 }

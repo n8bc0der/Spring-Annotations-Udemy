@@ -24,4 +24,10 @@ public class JoggingCoach implements Coach {
 		return null;
 	}
 
+	@Override
+	public String getFileFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
