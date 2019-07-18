@@ -1,8 +1,10 @@
 package com.udemy.springAnnotation;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component("Jogger")
+@Lazy
 public class JoggingCoach implements Coach {
 
 	public JoggingCoach() {
