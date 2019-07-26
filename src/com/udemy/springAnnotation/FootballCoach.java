@@ -1,7 +1,16 @@
 package com.udemy.springAnnotation;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class FootballCoach implements Coach {
 
+	@Value("${foo.name}")
+	private String Name;
+	
+	@Value("${foo.email}")
+	private String Email;
+	
+	
 	private FortuneService fortuneService;
 	
 	FootballCoach(FortuneService fortuneService) {
@@ -25,6 +34,14 @@ public class FootballCoach implements Coach {
 	public String getFileFortune() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public String getEmail() {
+		return Email;
 	}
 
 }

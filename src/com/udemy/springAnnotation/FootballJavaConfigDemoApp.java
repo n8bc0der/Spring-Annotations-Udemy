@@ -15,7 +15,7 @@ public class FootballJavaConfigDemoApp {
 //		Coach theCoach = context.getBean("TennisPracticeCoach",Coach.class);
 		
 //		using default bean-id which is the class name
-		Coach theCoach = context.getBean("footballCoach",Coach.class);
+		FootballCoach theCoach = context.getBean("footballCoach",FootballCoach.class);
 		
 //		Coach joggingCoach = context.getBean("Jogger",Coach.class);
 		
@@ -27,6 +27,14 @@ public class FootballJavaConfigDemoApp {
 		System.out.println(theCoach.getDailyFortune());
 		
 //		System.out.println(theCoach.getFileFortune());
+		
+		
+//************Using getter method to print form properties file************//
+		
+		System.out.println("Using getter to print Name is : " + theCoach.getName());
+		
+		System.out.println("Using getter to print Email is : " + theCoach.getEmail());
+		
 		
 //		Closing the container
 		context.close();
